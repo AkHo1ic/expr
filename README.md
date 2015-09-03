@@ -20,6 +20,30 @@ view.
 Installing it
 =============
 
+### Maven install
+
+I don't wana host anything so we get to use [this](https://jitpack.io/) instead!
+
+Add the following to your pom.xml
+
+Add the repository
+```xml
+<repository>
+  <id>jitpack.io</id>
+  <url>https://jitpack.io</url>
+</repository>
+```
+Add the dependency
+
+```xml
+<dependency>
+  <groupId>com.github.AkHo1ic</groupId>
+  <artifactId>expr</artifactId>
+  <version>b0afe81860</version>
+</dependency>
+```
+### Jar install
+
 To install, put `expr.jar` in your classpath. (You'll need to create
 it first by running `make`, if you downloaded this from GitHub. If you
 don't have `make`, then run `javac -O expr/*.java` and then `jar cf
